@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles/index.css">
+    <title>Star Wars</title>
+</head>
+
+<body>
+    <main class="container">
+        <h1 class="container__header">Поиск по вселенной Star Wars</h1>
+        <form class="form">
+            <div class="form__select">
+                <select name="search" id="search" class="search">
+                    <option value="choiseto">Выберите категорию...</option>
+                    <option value="people">Люди</option>
+                    <option value="planet">Планеты</option>
+                    <option value="film">Фильмы</option>
+                </select>
+            </div>
+            <div class="form__input">
+                <input type="number" name="number-input" class="number-input" min="1">
+            </div>
+            <div class="form__button">
+                <button type="submit" class="submit-button">Искать</button>
+            </div>
+        </form>
+        <div class="result">
+            <div class="result__error"></div>
+            <div class="result__search"></div>
+        </div>
+    </main>
+
+    <script src="assets/script/index.js"></script>
+</body>
+
+</html>
