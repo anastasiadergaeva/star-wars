@@ -16,17 +16,17 @@
 <body>
     <main class="container">
         <h1 class="container__header">Поиск по вселенной Star Wars</h1>
-        <form class="form">
+        <form class="form" onsubmit="return false">
             <div class="form__select">
                 <select name="search" id="search" class="search">
                     <option value="choiseto" disabled selected>Выберите категорию</option>
                     <option value="people">Люди</option>
-                    <option value="planet">Планеты</option>
-                    <option value="film">Фильмы</option>
+                    <option value="planets">Планеты</option>
+                    <option value="films">Фильмы</option>
                 </select>
             </div>
             <div class="form__input">
-                <input type="number" name="number-input" class="number-input" min="1">
+                <input type="number" min="1" name="number-input" class="number-input" value="1">
             </div>
             <div class="form__button">
                 <button type="submit" class="submit-button">Искать</button>
@@ -34,6 +34,9 @@
         </form>
         <div class="result">
             <div class="result__error"></div>
+            <div class="result__loader">
+                <div class="loader"></div>
+            </div>
             <div class="result__search"></div>
         </div>
     </main>
