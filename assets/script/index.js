@@ -14,6 +14,7 @@ function checkInputs() {
             throw new Error('Выберите категорию');
         }
         resultError.textContent = '';
+        result.textContent = '';
         console.log(numberInput.value);
         loader.classList.add('active');
         setTimeout(() => {
