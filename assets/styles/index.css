@@ -167,10 +167,14 @@ body {
     }
 
     .form {
-        width: 300px;
+        width: 290px;
         display: flex;
         flex-direction: column;
         height: 150px;
+    }
+
+    .submit-button {
+        color: black;
     }
 
     .result {
